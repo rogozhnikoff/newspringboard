@@ -1,7 +1,7 @@
 // display: inline-block hack
 display(how) {
   if (how == inline-block) {
-    @extend .p-ib;
+    @extend $p-ib;
   } else {
     display: how;
   }
@@ -10,7 +10,7 @@ display(how) {
 // clearfix hack
 clear(how) {
   if (how == fix) {
-    @extend .p-clearfix;
+    @extend $p-clearfix;
   } else {
     clear: how;
   }
@@ -18,11 +18,10 @@ clear(how) {
 
 // simple icons mixin
 icon(w, h, name, position = 'left top') {
-  @extend .p-ib;
+  @extend $p-ib;
   width: w;
   height: h;
   background: transparent url64('../img/icon/' + name + '.png') unquote(position) no-repeat;
-  cursor: pointer;
 }
 
 

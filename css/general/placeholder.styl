@@ -1,4 +1,6 @@
-.p-link {
+
+
+$p-link {
   text-decoration: none;
   /*white-space: nowrap;*/
   cursor: pointer;
@@ -27,7 +29,7 @@
   }
 }
 
-.p-ib {
+$p-ib {
   display: -moz-inline-stack; // ff2
   display: inline-block;
   zoom: 1; // Internet Explorer 6
@@ -37,7 +39,7 @@
 }
 
 // очистка потока
-.p-clearfix {
+$p-clearfix {
   *zoom: 1;
 
   &:before,
@@ -52,7 +54,7 @@
 }
 
 
-.p-invisible {
+$p-invisible {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
@@ -60,20 +62,20 @@
 }
 
 
-.p-visible {
+$p-visible {
   position: static;
   top: 0;
   left: 0;
   visibility: visible;
 }
 
-.p-text-hide {
+$p-text-hide {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
 }
 
-.p-before {
+$p-before {
   &:before {
     content: "";
     position: absolute;
@@ -84,7 +86,7 @@
   }
 }
 
-.p-after {
+$p-after {
   &:after {
     content: "";
     position: absolute;

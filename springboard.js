@@ -13,8 +13,6 @@ var express = require('express')
 var app = express();
 
 
-
-
 app.configure(function () {
   // общие настройки
   app.set('port', process.env.PORT || 3333);

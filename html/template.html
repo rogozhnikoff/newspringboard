@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}} - {{name}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+
+  <!-- стили -->
+  <link rel="stylesheet" href="/start.css" />
+
+  <!-- скрипты -->
+  <!--[if lt IE 9]><script src="/components/html5shiv/dist/html5shiv.js"></script><![endif]-->
+  <script type="text/javascript" src="/js/"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.icheck.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/fotorama.js"></script>
+
+  <script type="text/javascript" src="/js/gallery-fotorama.js"></script>
+  <script type="text/javascript" src="/js/atoms.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="container">
+    {% block header %}
+    <header class="head">
+      <h1>test header</h1>
+    </header>
+    {% endblock %}
+
+
+    {% block container %}
+    {% endblock %}
+  </div><!-- .container -->
+</div>
+
+
+{% block footer %}
+<footer class="foot">
+  <div class="container">
+    test footer
+  </div>
+</footer>
+{% endblock %}
+</body>
+</html>
